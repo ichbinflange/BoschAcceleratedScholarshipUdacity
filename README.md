@@ -1,0 +1,2 @@
+# BoschAcceleratedScholarshipUdaity
+Datasciene course udacity
