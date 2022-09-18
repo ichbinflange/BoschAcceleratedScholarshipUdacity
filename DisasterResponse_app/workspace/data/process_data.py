@@ -5,9 +5,9 @@ from sqlalchemy import create_engine
 
 def load_data(messages_filepath, categories_filepath):
     '''
-    args:messages data csv
-        catergories csv
-    return merged dataframe
+    args:   messages data csv
+            catergories csv
+    return  merged dataframe
     
     '''
     messages = pd.read_csv(messages_filepath)
@@ -72,7 +72,11 @@ def clean_data(df):
 
 def save_data(df, database_filename):
     
-    print(df.columns)
+    '''
+    info: checks if table exists and saves data into ddatabase 
+    args:   dataframe
+            database filename
+    '''
     engine = create_engine(f'sqlite:///{database_filename}')
     try:
         df.to_sql('DisasterResponsedb', engine, index=False)
