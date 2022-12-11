@@ -107,7 +107,7 @@ def index():
             ],
 
             'layout': {
-                'title': 'Distribution of message by genre and search and resue class ',
+                'title': 'Distribution of message by genre and search and rescue class ',
                 'yaxis': {
                     'title': "Count"
                 },
